@@ -1,7 +1,7 @@
 # pca-face-recognition
 A simple face recognition demo using PCA algorithm.
 
-# Run
+# Use KNN classifier
 
 Using the ORL face database.
 
@@ -51,3 +51,19 @@ s39/10.pgm is the most similar to s39/6.pgm
 s40/10.pgm is the most similar to s5/1.pgm
 accuracy: 0.925000
 ```
+
+# Use SVM classifier
+
+```pca_svm_face_recogition.m``` is a Matlab code which implements a face recognition program using PCA to reduce the dimension of the features and one-vs-one multiclass SVM to classify the image.
+
+I used PCA to reduce the data to 50 dimensions and then use SVM linear kernel function to classify, finally, I got an accuracy of 0.9437.
+
+```
+accuracy =
+
+    0.9437
+```
+
+Here is the eigen faces:
+
+![eigen_faces.jpg](https://github.com/techping/pca-face-recognition/raw/master/eigen_faces.jpg)
